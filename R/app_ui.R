@@ -10,7 +10,9 @@ app_ui <- function(request) {
     golem_add_external_resources(),
     # Your application UI logic
     fluidPage(
-      h1("shinydev")
+      h1("shinydev"),
+      mod_Covid_data_ui("Covid_data_1"),
+      mod_Euro_data_ui("Euro_data_1")
     )
   )
 }
